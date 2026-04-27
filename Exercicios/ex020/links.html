@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color : red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: blue;
+        }
+
+        a::after {
+            content: ' [link externo]';
+            font-weight: normal;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="http://github.com/Joao-Gabriel-Teixeira" target="_blank">Repositorio do github</a></li>
+        <li><a href="http://youtube.com" target="_blank">youtube</a></li>
+        <li><a href="http://www.cursoemvideo.com" target="_blank">curso em video</a></li>
+    </ul>
+</body>
+</html>
